@@ -1,0 +1,25 @@
+networks:
+  default:
+  traefik_default:
+    external: true
+
+services:
+
+  app:
+    image: fpix/website
+    networks:
+      - traefik_default
+      - default
+    environment:
+      - PROJECT_NAME=website
+      - PROJECT_DESCRIPTION=Personal website of Florian Pix.
+      - PROJECT_VERSION=0.0.1
+      - SERVER_IP=0.0.0.0
+      - SERVER_PORT=9000
+      - BACKEND_CORS_ORIGINS=["https://florianpix.de"]
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.climbing-api.rule=Host(`florianpix.de`)
+      - traefik.http.routers.climbing-api.entrypoints=websecure
+      - traefik.http.routers.climbing-api.tls.certresolver=myresolver
+      - traefik.http.services.climbing-api.loadbalancer.server.port=9000

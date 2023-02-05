@@ -1,0 +1,32 @@
+// app global css in SCSS form
+
+@font-face {
+  font-family: handwritten;
+  src: url(./fonts/LetraDeMamaRegular-jE8Ay.woff);
+}
+
+// declare a class which applies it
+.handwritten {
+  font-family: 'handwritten', serif;
+  font-size: 50px;
+}
+
+.bg-image {
+  background-image: url(assets/img/finale_landscape.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.limit-width {
+  max-width: 1000px;
+  min-width: 750px;
+}
+
+.center-img {
+  margin-left: calc(50% - 250px);
+}
