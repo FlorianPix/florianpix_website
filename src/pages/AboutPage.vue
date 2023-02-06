@@ -13,14 +13,10 @@
         About me
       </div>
       <div class="lt-md text-body1 q-ma-sm limit-width-mobile text-center">
-        I am an information systems engineering student from Germany and I currently live in Dresden.
-        I am working on my master thesis which should be finished at the end of 2023.
-        Normally I develop new robots or automate industrial processes but recently I've been also getting into building frontends for them.
+        {{ $t("about_me") }}
       </div>
       <div class="gt-sm text-body1 q-ma-sm limit-width-desktop text-center">
-        I am an information systems engineering student from Germany and I currently live in Dresden.
-        I am working on my master thesis which should be finished at the end of 2023.
-        Normally I develop new robots or automate industrial processes but recently I've been also getting into building frontends for them.
+        {{ $t("about_me") }}
       </div>
     </q-card>
   </q-page>
