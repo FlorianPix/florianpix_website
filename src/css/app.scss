@@ -22,11 +22,10 @@ a {
   color: inherit;
 }
 
-.limit-width {
-  max-width: 1000px;
-  min-width: 750px;
+.limit-width-mobile {
+  max-width: 250px;
 }
 
-.center-img {
-  margin-left: calc(50% - 250px);
+.limit-width-desktop {
+  max-width: 500px;
 }

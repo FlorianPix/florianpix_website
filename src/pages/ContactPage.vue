@@ -1,11 +1,14 @@
-AboutPage.vue<template>
+<template>
   <q-page class="row items-center justify-evenly bg-image">
-    <q-card class="q-pa-md limit-width">
-      <q-btn round class="center-img">
-        <q-avatar size="500px">
-          <img src="~/src/assets/img/contact.jpeg">
+    <q-card class="q-pa-xl items-center">
+      <div class="row center">
+        <q-avatar class="lt-md" size="250px">
+          <img alt="contact image" src="~/src/assets/img/contact.jpeg">
         </q-avatar>
-      </q-btn>
+        <q-avatar class="gt-sm" size="500px">
+          <img alt="contact image" src="~/src/assets/img/contact.jpeg">
+        </q-avatar>
+      </div>
       <div class="text-h1 q-pa-md handwritten" style="text-align: center">
         Get in touch
       </div>
@@ -15,17 +18,17 @@ AboutPage.vue<template>
       <div class="row items-center justify-evenly q-ma-xl">
         <q-btn round href="https://github.com/FlorianPix">
           <q-avatar size="50px">
-            <img src="~/src/assets/img/github.svg">
+            <img alt="github logo" src="~/src/assets/img/github.svg">
           </q-avatar>
         </q-btn>
         <q-btn round href="https://twitter.com/PixFlorian">
           <q-avatar size="50px">
-            <img src="~/src/assets/img/twitter.svg">
+            <img alt="twitter logo" src="~/src/assets/img/twitter.svg">
           </q-avatar>
         </q-btn>
         <q-btn round href="https://det.social/@florianpix">
           <q-avatar size="50px">
-            <img src="~/src/assets/img/mastodon.svg">
+            <img alt="mastodon logo" src="~/src/assets/img/mastodon.svg">
           </q-avatar>
         </q-btn>
       </div>
