@@ -3,10 +3,18 @@
     <q-card class="q-pa-xl items-center">
       <div class="row center">
         <q-avatar class="lt-md" size="250px">
-          <img alt="contact image" src="~/src/assets/img/contact.jpeg">
+          <q-img alt="contact image" src="~/src/assets/img/contact.jpeg">
+            <template v-slot:loading>
+              <q-skeleton class="lt-md" type="circle" size="250px" />
+            </template>
+          </q-img>
         </q-avatar>
         <q-avatar class="gt-sm" size="500px">
-          <img alt="contact image" src="~/src/assets/img/contact.jpeg">
+          <q-img alt="contact image" src="~/src/assets/img/contact.jpeg">
+            <template v-slot:loading>
+              <q-skeleton class="gt-sm" type="circle" size="500px" />
+            </template>
+          </q-img>
         </q-avatar>
       </div>
       <div class="text-h1 q-pa-md handwritten" style="text-align: center">
