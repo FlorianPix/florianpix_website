@@ -8,7 +8,7 @@
         <div>
           <q-btn round href="https://github.com/FlorianPix/climbing_diary">
             <q-avatar size="50px">
-              <img src="~/src/assets/img/github.svg">
+              <q-img alt="github icon" src="~/src/assets/img/github.svg"/>
             </q-avatar>
           </q-btn>
           climbing diary
